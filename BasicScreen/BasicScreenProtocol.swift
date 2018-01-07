@@ -16,6 +16,5 @@ public protocol BasicScreenProtocol {
     func cls()
 
     func input(_ completion: @escaping (String) -> ())
-    func input() -> String
-    
+
 }

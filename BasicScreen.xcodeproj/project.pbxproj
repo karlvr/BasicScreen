@@ -29,7 +29,8 @@
 		B8CE922E2001D1AD0095B96D /* BasicScreenProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicScreenProtocol.swift; sourceTree = "<group>"; };
 		B8CE922F2001D1AD0095B96D /* BasicScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicScreenView.swift; sourceTree = "<group>"; };
 		B8CE92302001D1AD0095B96D /* BasicScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicScreenViewController.swift; sourceTree = "<group>"; };
-		B8FF96321E6E948F00A35208 /* BasicScreenView+Sync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BasicScreenView+Sync.swift"; sourceTree = "<group>"; };
+		B8CE92342001D37F0095B96D /* BasicScreen.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BasicScreen.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B8FF96321E6E948F00A35208 /* BasicScreenView+Sync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BasicScreenView+Sync.swift"; path = "BasicScreen/BasicScreenView+Sync.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +47,9 @@
 		B837ED8E1E6A86A2001DF94E = {
 			isa = PBXGroup;
 			children = (
-				B8FF96321E6E948F00A35208 /* BasicScreenView+Sync.swift */,
 				B837ED991E6A86A2001DF94E /* BasicScreen */,
 				B837ED981E6A86A2001DF94E /* Products */,
+				B8CE92342001D37F0095B96D /* BasicScreen.playground */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +73,7 @@
 				B8CE922E2001D1AD0095B96D /* BasicScreenProtocol.swift */,
 				B8CE922F2001D1AD0095B96D /* BasicScreenView.swift */,
 				B8CE92302001D1AD0095B96D /* BasicScreenViewController.swift */,
+				B8FF96321E6E948F00A35208 /* BasicScreenView+Sync.swift */,
 			);
 			path = BasicScreen;
 			sourceTree = "<group>";
