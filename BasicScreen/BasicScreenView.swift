@@ -109,7 +109,7 @@ public class BasicScreenView : UIView, BasicScreenProtocol {
 
         let att = attributes()
 
-        for c in string.characters {
+        for c in string {
             let s = "\(c)" as NSString
             if s == "\n" {
                 newLine()
@@ -171,7 +171,7 @@ public class BasicScreenView : UIView, BasicScreenProtocol {
     }
 
     private func updatedFont() {
-        let size = ("M" as NSString).size(attributes: attributes())
+        let size = ("M" as NSString).size(withAttributes: attributes())
         advance = ceil(size.width)
         leading = ceil(size.height)
     }
@@ -236,10 +236,10 @@ public class BasicScreenView : UIView, BasicScreenProtocol {
         return CGPoint(x: CGFloat(cursor.x) * advance, y: CGFloat(cursor.y) * leading)
     }
 
-    private func attributes() -> [String: Any]? {
-        var attributes: [String: Any] = [:]
-        attributes[NSFontAttributeName] = font
-        attributes[NSForegroundColorAttributeName] = color
+    private func attributes() -> [NSAttributedStringKey: Any]? {
+        var attributes: [NSAttributedStringKey: Any] = [:]
+        attributes[.font] = font
+        attributes[.foregroundColor] = color
         return attributes
     }
 
@@ -315,7 +315,7 @@ extension BasicScreenView: UIKeyInput {
             return
         }
 
-        inputText = inputText!.substring(to: inputText!.index(before: inputText!.endIndex))
+        inputText = String(inputText![..<inputText!.endIndex])
         del()
     }
 }
